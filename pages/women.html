@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eagle'Sports ofrece productos innovadores, experiencias y servicios para inspirar a nuevos atletas y continuar inspirando a atletas de alto rendimiento, poniendo en sus manos los mejores productos de las mejores marcas">
+    <meta name="keywords" content="Eagle'Sports, Mujeres, Nuevos productos, Conjunto, Running, Mallas, Pans, PLayeras, Chamrra, Deportes, Nike, Adidas, Jordan, Puma">
+    <!-- CSS only -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="../img/Eagle'Sports.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <title>Eagle'Sports</title>
+</head>
+<body>
+     <!--encabezado de proyecto-->
+  <div class="grid-women">
+   <header>
+      <nav class="navbar navbar-dark navbar-expand-lg bg-black">
+         <div class="container-fluid">
+           <div class="logo-eagle">
+             <a href="../index.html"><img src="../img/Eagle'Sports.png" class="rounded" alt="logo eagle"></a>
+           </div>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarScroll">
+             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../pages/women.html">Mujer</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../pages/mens.html">Hombre</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../pages/kids.html">Niños</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../pages/registro.html">Unete</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" aria-current="page" href="../pages/iniciar-sesion.html">Iniciar Sesion</a>
+               </li>
+               </ul>
+             <div>
+             <form class="d-flex" role="search"> </ul>
+               <input  class="form-control me-2" type="search" id="buscador" placeholder="Buscar" aria-label="Search">
+              
+               <button class="btn btn-outline-light" type="submit" id="botonB">Buscar</button>
+               
+              </form>
+               
+             </div>
+             
+           </div>
+           
+           <div>
+            
+         <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+       
+        </div>
+        
+         </div>
+        
+     </nav>
+      <ul id="resultado">
+               </ul>
+  </header>
+     <!--contenido principal-->
+   
+     <div class="menu-deptos">
+      <p>&nbsp;</p>, <p>&nbsp;</p><p>&nbsp;</p>, <p>&nbsp;</p><p>&nbsp;</p>, <p>&nbsp;</p>
+      <section>
+           <h1>Ropa Mujeres</h1>
+           <br> 
+           <h2>Filtros</h2>
+              <ul>
+                   <a href=""><li>Playeras</li></a>  
+                     <a href=""><li>Shorts</li></a>
+                     <a href=""><li>Pants</li></a>
+                     <a href=""><li>Chamarras</li></a>
+                     <a href=""><li>Sudaderas</li></a>
+                     <a href=""><li>Jerseys Futbol</li></a>
+                     <a href=""><li>Calcetines</li></a>
+                     <a href=""><li>Ropa interior</li></a>
+                     <a href=""><li>Trajes de baño</li></a>
+                 </ul>
+                
+        <form> 
+           <h3>Talla</h3><br>  <!--Menu desplegable-->
+           <select name="Size">
+              <option value="S">Small</option>
+              <option value="M">Medium</option>
+              <option value="L">Large</option>
+           </select>   
+        </form>
+        <br>
+        <form >
+           
+           <h4>Deportes</h4>
+           <br>
+        <ul>
+           <li>Running <input type="checkbox"></li>
+           <li>Futbol <input type="checkbox"></li>
+           <li>Entrenamiento & gym <input type="checkbox"></li>
+           <li>Basquetbol <input type="checkbox"></li>
+           <li>Tenis <input type="checkbox"></li>
+           <li>Voleibol <input type="checkbox"></li>
+           <li>Yoga <input type="checkbox"></li>
+           <li>Estilo de vida <input type="checkbox"></li>
+        </ul>
+          
+        </form>
+      </section>        
+  </div>       
+  
+  <main id="contenedor-productos">
+    <div class="women">
+      
+      <h1>Mujeres que rompen limites</h1>
+      
+         <div id="women-portada"><img src="../img/mujeres.png" class="img-fluid" alt="mujeres"></div> 
+         
+  </main>
+
+  <div class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+          <div id="carrito-contenedor">
+          </div>
+          <p class="precioProducto">Precio total + IVA : $<span id="precioTotal">0</span></p>
+          <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+          <button id="carrito-pagar" class="boton-agregar">Pagar</button>
+          
+      </div>
+  </div>
+     
+     <!--pie de pagina-->
+     <footer>
+      <div class="inicio">
+         <div class="inicio icon-arrow-up2" ><a href="">Inicio de pagina</a></div>
+        </div>
+        <div class="pie-de-pagina">
+            <ul class="menu-pie">
+              <li>Siguenos:</li>
+                  <ul class="submenu-siguenos">   
+                     <li><a href="https://es-la.facebook.com/"target="_blank"><img src="../img/facebook.png" alt="imagen facebook"></a></li>
+                       
+                     <li><a href="https://www.instagram.com/"target="_blank"><img src="../img/instagram.png" alt="imagen instagram"target="_blank"></a></li>
+                         
+                     <li><a href="https://twitter.com/"target="_blank"><img src="../img/Twitter.png" alt="imagen twitter"></a></li>
+                         
+                     <li><a href="https://www.youtube.com/"target="_blank"><img src="../img/youtube.png" alt="imagen youtube"></a></li>
+                         
+                     </li>
+                  </ul>
+                  <li>Acerca de Eagle'Sports</li>
+                  <ul class="submenu-acerca">
+                     <li><a href="../pages/noticias.html">Noticias</a></li>
+                     <li><a href="../pages/empleo.html">Empleo</a></li>
+                     <li><a href="../pages/contactanos.html">Contactanos</a></li>
+                     <li><a href="../pages/preguntas.html">Preguntas Frecuentes(FAQs)</a></li>
+                  </ul> 
+             <li>Obtener Ayuda</li>
+                  <ul class="submenu-ayuda">
+                    <li><a href="../pages/envio.html">Envio y Entrega</a></li>
+                    <li><a href="../pages/pais.html">Eagle'Sports Internacional </a></li>
+                    <li><a href="../pages/devoluciones.html">Devoluciones</a></li>
+                    <li><a href="../pages/pago.html">Opciones de Pago</a></li>
+                  </ul>
+            </ul>
+     </div>
+     <div class="terminos">
+            <ul>
+                     <li><a href="../pages/terminos.html">Terminos y condiciones</a></li> 
+                     <li><a href="../pages/privacidad.html">/ Aviso de privacidad</a></li> 
+                     <li><a href="../pages/mapa.html"> / Mapa del sitio</a></li>
+            </ul>
+     </div>
+     </footer> 
+    
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+<script  src="../js/mainw.js"></script>
+<script src="/js/main.js"></script>
+<script  src="../js/modal.js"></script>
+
+</body>
+</html>

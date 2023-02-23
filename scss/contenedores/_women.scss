@@ -1,0 +1,48 @@
+/* estilos de women*/
+
+.women h1{
+    @extend %estilosTitulos;
+      
+  }
+  #women-portada img{
+    @extend %estilosPortadaMW;
+    border: 2px solid gray;
+    box-shadow: 12px 12px 20px palevioletred;
+  }
+  .product-women{
+    @include flex;
+    flex-direction: row;
+div{
+    text-align: $align;
+}  
+h2{
+    font-size: $text-size-products;
+    text-align: $align;
+    font-weight: $text-weight;
+}
+p{
+    font-size:$text-size-p;
+    text-align: $align;
+}
+img{
+ @extend %estilosProductos;
+}
+}
+.grid-women{
+  @extend %estilosGrid;
+}
+
+.menu-deptos{
+  @extend %estilosMenuLateral;
+  h1, h2, h3, h4{
+@extend %estilosTitulosMLateral;
+  }
+ul{
+      list-style: $decoration;
+    }
+a{
+      text-decoration: $decoration;
+      color: $color-texto;
+    }
+    
+}

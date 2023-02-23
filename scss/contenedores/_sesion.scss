@@ -1,0 +1,8 @@
+/*estilos formulario sesion*/
+.eagle-formulario{
+    @extend %estilosEncabezadoFormularios;
+    
+  }
+.formulario-sesion{
+  @extend %estilosFormularios;
+  }

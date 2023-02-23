@@ -1,0 +1,58 @@
+/* estilos mapas*/
+.mapa-de-sitio{
+    width: 100%;
+    height: 100%;
+      h1{
+        text-align: $align;
+        font-size:$text-big;
+      }
+    
+.mapa-deptos{
+  @include flex;
+  padding: $padding;
+  margin: $margin ;
+  gap: 10px;
+
+ h2{
+    font-size: 30px;
+    text-align: $align;
+    margin: 2rem;
+    padding: $padding;
+}
+    &:hover{
+        color:gray;
+    }
+
+   .div1{
+    @extend %estilosMapas;
+    
+   }
+   .div2{
+    @extend %estilosMapas;
+   }
+   .div3{
+    @extend %estilosMapas;
+    
+   }
+   .div4{
+    @extend %estilosMapas;
+
+   }
+   
+   p{
+    font-size: $text-size-p;
+    text-align:$alignl;
+    font-weight: $text-weight;
+   }
+  
+    ul{
+       padding: 0rem;
+       margin: 0rem;
+    }
+    li{
+       font-size: $text-small;
+        text-align:$alignl;
+        list-style: $decoration;
+    }
+}
+}

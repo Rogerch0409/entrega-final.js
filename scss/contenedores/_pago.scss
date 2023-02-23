@@ -1,0 +1,31 @@
+/* estilos pagos*/
+.pago{
+    padding: 2rem;
+    margin: 2rem;
+    h1{
+        text-align: $align;
+        font-size:$text-big;
+      }
+      h2, h3, h4{
+        text-align: $alignl;
+        font-size:25px;
+      }
+      p{
+        font-size: $text-size-p;
+        text-align:$alignl;
+        
+      }
+     li{
+           
+        font-size: $text-size-p;
+        text-align:$alignl;
+        font-weight: $text-weight;
+        
+      }
+      
+      
+      a{
+        font-size: $text-size-p;
+        text-decoration:$decoration;
+      }
+}

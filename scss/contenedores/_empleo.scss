@@ -1,0 +1,26 @@
+/*estilos formulario empleo*/
+.empleo{
+  @include flex;
+ 
+  .imagen-empleo img{
+ @extend %estilosImgEmpleo;
+  }
+  h1{
+   font-size: 25px;
+  }
+  h2{
+   font-size: $text-size-p;
+  }
+  p{
+   font-size: $text-small;
+  }
+
+ .eagle-formulario{
+    @extend %estilosEncabezadoFormularios;
+ } 
+ .formulario-empleo{
+    @extend %estilosFormularios;
+    gap:100px;
+
+ }
+ } 

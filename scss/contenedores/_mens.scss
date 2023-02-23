@@ -1,0 +1,48 @@
+/* estilos de mens*/
+.mens {
+  h1{ @include titulos;
+
+  }
+       
+  }
+  #mens-portada img{
+    @extend %estilosPortadaMW;
+    border: 2px solid gray;
+    box-shadow: 12px 12px 20px blue;
+  }
+  .product-mens{
+    @include flex;
+    flex-direction: row;
+    div{
+        text-align: $align;
+    }  
+    h2{
+        font-size: $text-size-products;
+        text-align: $align;
+        font-weight: $text-weight;
+    }
+    p{
+        font-size:$text-size-p;
+        text-align: $align;
+    }
+    img{
+      @extend %estilosProductos;
+    }
+    }
+    .grid-mens{
+        @extend %estilosGrid;
+    }
+    
+    .menu-deptos{
+      @extend %estilosMenuLateral;
+      h1, h2, h3, h4{
+    @extend %estilosTitulosMLateral;
+      }
+    ul{
+          list-style: $decoration;
+        }
+    a{
+          text-decoration: $decoration;
+          color: $color-texto;
+        }
+    }

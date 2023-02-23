@@ -1,0 +1,43 @@
+/*estilos devoluciones*/
+.devoluciones{
+    padding: 2rem;
+    margin: 2rem;
+    h1{
+        text-align: $align;
+        font-size:$text-big;
+      }
+      h2, h3, h4{
+        text-align: $alignl;
+        font-size:25px;
+      }
+      p{
+        font-size: $text-size-p;
+        text-align:$alignl;
+        
+      }
+      .proceso-devolucion{
+        @include flex;
+        justify-content: center;
+        img{
+            width: 5vh;
+            height: 5vh;
+       }
+        p{
+            text-align:$align;
+            font-size: $text-small;
+        }
+        li{
+           
+        font-size: $text-size-p;
+        text-align:$align;
+        font-weight: $text-weight;
+        list-style:$decoration;
+      }
+      }
+      
+      a{
+        font-size: $text-size-p;
+        text-decoration:$decoration;
+      }
+      
+}

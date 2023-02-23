@@ -1,0 +1,32 @@
+/*estilos politicas*/
+.politica{
+    padding: 2rem;
+    margin: 2rem;
+    h1{
+        text-align: $align;
+        font-size:$text-big;
+      }
+      h2{
+        text-align: $align;
+        font-size:25px;
+      }
+      p{
+        font-size: $text-size-p;
+        text-align:$alignl;
+        
+      }
+      li{
+        font-size: $text-size-p;
+        text-align:$alignl;
+        font-weight: $text-weight;
+      }
+      a{
+        font-size: $text-size-p;
+        text-decoration: $decoration;
+      }
+      span{
+        font-size: $text-size-p;
+        text-align:$alignl;
+        font-weight: $text-weight;
+      }
+}

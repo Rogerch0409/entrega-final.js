@@ -1,0 +1,17 @@
+/* estilos noticias*/
+.noticias{
+    @include flex;
+    flex-direction: row;
+
+img{
+@extend %estilosNoticias;
+}
+
+p{
+    font-size:$text-size-p;
+    text-align: $align;
+    font-weight: $text-weight;
+}
+
+
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eagle'Sports ofrece productos innovadores, experiencias y servicios para inspirar a nuevos atletas y continuar inspirando a atletas de alto rendimiento, poniendo en sus manos los mejores productos de las mejores marcas">
+    <meta name="keywords" content="Eagle'Sports, Promociones buen fin, Nuevos productos, Meses sin intereses, Nike, Adidas, Jordan, Puma">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!--link css-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="img/Eagle'Sports.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>Eagle'Sports</title>
+</head>
+<body>
+     <!--encabezado de proyecto-->
+     <header>
+       <nav class="navbar navbar-dark navbar-expand-lg bg-black">
+          <div class="container-fluid">
+            <div class="logo-eagle">
+              <a href="index.html"><img src="img/Eagle'Sports.png" class="rounded" alt="logo-eagle"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-togle active" aria-current="page" href="pages/women.html">Mujer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/mens.html">Hombre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/kids.html">Niños</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/registro.html">Unete</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pages/iniciar-sesion.html">Iniciar Sesion</a>
+                </li>
+                </ul>
+              <form class="d-flex" role="search">
+                <input id="buscador" class="form-control me-2" type="search" placeholder="Search" aria-label="Buscar">
+                <button id="botonB" class="btn btn-outline-light" type="submit">Buscar</button>
+              </form>
+            </div>
+            <div>
+             <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+           </div>
+        </div>
+      </nav>
+      <ul id="resultado">
+      </ul>
+    </header>
+   
+    <!--contenido principal-->
+    <main>
+     
+      <div class="imagen-promocion">
+             <h1>¡ 3 y 6 meses sin intereses !</h1>
+            <p>Apartir de $3000 MXN exclusivo para miembros.<a href="/pages/terminos.html"> Terminos y Condiciones </a></p>
+            <a href="pages/mens.html"><img src="img/regalos-diciembre.png" class="img-fluid" alt="Regalos-Diciembre"></a>
+           
+      </div>
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <label for="inputEmail4" class="carousel-label">Nuevos Productos</label>
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+         </div>
+         <div class="carousel-inner">
+           <div class="carousel-item active">
+             <img src="img/nuevos-lanzamientos/nuevos-lanzamientos2.png"  alt="sudadera roja mens">
+           </div>
+           <div class="carousel-item">
+             <img src="img/nuevos-lanzamientos/nuevos-lanzamientos3.png"  alt="Jersey chicago women">
+           </div>
+           <div class="carousel-item">
+             <img src="img/nuevos-lanzamientos/nuevos-lanzamientos4.png"  alt="Tenis jordan mens">
+           </div>
+           <a href="pages/mens.html"><div class="carousel-item">
+            <img src="img/nuevos-lanzamientos/lanzamientos-hombre.png"alt="imagen link mens"></div></a>
+          
+          <div class="carousel-item">
+            <a href="pages/women.html"><img src="img/nuevos-lanzamientos/lanzamientos-mujer.png" alt="imagen link women">
+          </div></a>
+          <div class="carousel-item">
+            <a href="pages/kids.html"><img src="img/nuevos-lanzamientos/lanzamientos-niños.png" alt="imagen link kids">
+          </div></a>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>
+       
+         <div class="video">
+       <h2>adidas | Ready for Sport</h2>
+           <div class="ratio ratio-21x9">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rwk5PdpTxSU?autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+</div>
+      
+      <div class="imagen-puma">
+        <h3>Novedades</h3>
+            <a href="pages/women.html"><img src="img/novedades.png" class="img-fluid" alt="imagen novedades"></a>
+      </div>
+        
+         <div class="jordan">
+          <h4>Atletas destacados de la marca Jordan</h4>
+             <div><img src="img/zion williamson.png" alt="Imagen Zion williamson"><p>ZION WILLIAMSON / 
+              Alero New Orleans Pelicans</p></div>
+             <div><img src="img/luka doncic.png" alt="Imagen Luka Doncic"><p>LUKA DONCIC / 
+              Alero/armador Dallas Mavericks</p></div>
+             <div><img src="img/russell westbrook.png" alt="Imagen Rusell Westbrook"><p>RUSSELL WESTBROOK / 
+              Armador Los Angeles Lakers</p></div>
+         </div>
+      
+    </main>
+    <main id="contenedor-productos">
+      <div>
+        
+        <h1></h1>
+        
+           <div></div> 
+           
+    </main>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+            </div>
+            <p class="precioProducto">Precio total + IVA : $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            <button id="carrito-pagar" class="boton-agregar">Pagar</button>
+            
+        </div>
+    </div>
+    <footer>
+      <div class="inicio">
+        <div class="inicio icon-arrow-up2" ><a href="">Inicio de pagina</a></div>
+       </div>
+       <div class="pie-de-pagina">
+           <ul class="menu-pie">
+             <li>Siguenos:</li>
+                 <ul class="submenu-siguenos">   
+                    <li><a href="https://es-la.facebook.com/"target="_blank"><img src="img/facebook.png" alt="imagen facebook"></a></li>
+                      
+                    <li><a href="https://www.instagram.com/"target="_blank"><img src="img/instagram.png" alt="imagen instagram"></a></li>
+                        
+                    <li><a href="https://twitter.com/"target="_blank"><img src="img/Twitter.png" alt="imagen twitter"></a></li>
+                        
+                    <li><a href="https://www.youtube.com/"target="_blank"><img src="img/youtube.png" alt="imagen youtube"></a></li>
+                 </ul>
+            <li>Acerca de Eagle'Sports</li>
+                 <ul class="submenu-acerca">
+                    <li><a href="/pages/noticias.html">Noticias</a></li>
+                    <li><a href="/pages/empleo.html">Empleo</a></li>
+                    <li><a href="/pages/contactanos.html">Contactanos</a></li>
+                    <li><a href="/pages/preguntas.html">Preguntas Frecuentes(FAQs)</a></li>
+                 </ul> 
+            <li>Obtener Ayuda</li>
+                 <ul class="submenu-ayuda">
+                    <li><a href="/pages/envio.html">Envio y Entrega</a></li>
+                    <li><a href="/pages/pais.html">Eagle'Sports Internacional</a></li>
+                    <li><a href="/pages/devoluciones.html">Devoluciones</a></li>
+                    <li><a href="/pages/pago.html">Opciones de Pago</a></li>
+                 </ul>
+           </ul>
+    </div>
+    
+    <div class="terminos">
+           <ul>
+                    <li><a href="/pages/terminos.html"> Terminos y condiciones </a></li> 
+                    <li><a href="/pages/privacidad.html"> / Aviso de privacidad </a></li> 
+                    <li><a href="/pages/mapa.html"> / Mapa del sitio </a></li>
+           </ul>
+    </div>
+    </footer>    
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+<script src="/js/main.js"></script>
+<script src="/js/modal.js"></script>
+<script src="/js/mainc.js"></script>
+</body>
+</html>

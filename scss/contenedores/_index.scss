@@ -1,0 +1,143 @@
+/* estilos del index */
+
+body{
+background-color: $color-fondo;
+ /*md*/
+ @include desktop{
+    background-color: $color-fondo1;
+  }
+@include tablet{
+    background-color: $color-fondo2;
+  }
+
+@include mobile{
+    background-color: $color-fondo3;
+}
+  
+}
+header{
+    @include header(black, sticky, 0, 2);
+    .logo-eagle img{
+        @include logo-eagle;
+}
+    .logo-compras img{
+    @include logo-compras;
+}
+}
+  main{
+     @include flex;
+    .imagen-promocion h1{
+      @extend %estilosTitulos;
+    }
+    .imagen-promocion p{
+        @include parrafo;
+    }
+    a{
+        @include link;
+    }
+    a:hover{
+        color: gray;
+    }
+    .imagen-promocion img{
+        @extend %estilosImgIndex;
+    }
+    .carousel-label{
+        font-size:$text-big;
+        color:$color-texto;
+        font-weight:$text-weight;
+    }
+    
+     .carousel-inner img{
+        @include img-carousel;
+     }
+      
+ .video{
+    @include video;
+    h2{
+         @include titulos;
+    }
+ }
+ .imagen-puma h3{
+    @extend %estilosTitulos;
+
+ }
+ .imagen-puma img{
+    @extend %estilosImgIndex;
+ }
+ 
+  .jordan h4{
+    @extend %estilosTitulos;
+     }
+    .jordan {
+        @include flex;
+        padding:$padding;
+        margin:$margin;
+        gap:20px;
+        }
+    .jordan img{
+        @include jordan-img;
+    }
+       .jordan p{
+        text-align: $align;
+        font-size: $text-size-p;
+        font-weight: $text-weight;
+       }
+
+}
+
+/*estilos regresar al inicio*/
+.inicio{
+    @include inicio;
+    a{
+        text-decoration:$decoration;
+        color:$color-texto;
+        font-size:$text-size-p;
+    
+    &:hover{
+        color: white;
+    }
+}
+}
+/* estilos de footer*/
+footer{
+@include footer;
+}
+.pie-de-pagina{
+    width: 100%;
+    margin:$margin;
+  ul{
+    list-style: none;
+  }
+}
+.menu-pie li{
+    @include menu-pie-pagina;
+}
+.submenu-siguenos img{
+    @include iconos-redes;
+}
+
+.submenu-acerca li a{
+   @include submenu-footer;
+   &:hover{
+    color:gray;
+}
+}
+.submenu-ayuda li a{
+    @include submenu-footer;
+    &:hover{
+    color:gray;
+}
+}
+.terminos ul {
+   @include flex;
+   list-style:$decoration;
+}
+.terminos ul li a{
+    text-decoration:$decoration;
+    color:$color-fondo;
+    font-size:$text-small;
+    &:hover{
+        color:gray;
+    }
+
+ }

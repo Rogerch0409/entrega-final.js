@@ -1,0 +1,8 @@
+/*estilos formulario unete*/
+
+.eagle-formulario{
+    @extend %estilosEncabezadoFormularios;
+  }
+.formulario-registro{
+   @extend %estilosFormularios;
+  }

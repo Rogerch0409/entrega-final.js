@@ -1,0 +1,36 @@
+/*estilos compras*/
+.carrito{
+
+    @include flex;
+    margin: 0rem;
+    padding: 0rem;
+    gap: 30px;
+    h1{
+     font-size: $text-big;
+     text-align: $alignl;
+    }
+    h2{
+     font-size: $text-size-p;
+     text-align: $align;
+     margin: $margin;
+     padding: $padding;
+    }
+    p{
+     font-size:$text-small;
+    }
+    
+    fieldset{
+        margin: 2rem;
+        padding: 2rem;
+        a{
+    font-size:$text-small;
+    color: red;   
+    }
+    }
+   .fieldset-compras{
+      @extend %estilosFormularios;
+      margin: 2rem;
+      padding: 2rem;
+        
+   }
+   } 

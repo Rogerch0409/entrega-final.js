@@ -1,0 +1,50 @@
+
+/* estilos preguntas*/
+.preguntas{
+    width: 90%;
+    padding: 2rem;
+    margin: 2rem;
+.eagle-formulario{
+    @extend %estilosEncabezadoFormularios;
+    h1{
+        text-align:$align;
+        font-size: $text-big;
+        margin: $margin;
+    }
+
+}
+.preguntas-style{
+    box-shadow: 0 0 15px rgba(0,0,0,.1);
+    padding: 30px;
+     
+ 
+    .item-faq{
+        box-shadow: 0 0 15px rgba(0,0,0,.2);
+        border-radius: 10px;
+       
+    .question{
+        display: flex;
+        background-color: rgba(43,51,122,.2);
+        padding: $padding;
+        h2{
+            font-size: $text-size-p;
+            text-align: $align;
+        }
+        
+    }
+    
+    .answer{
+        margin: $margin;
+        padding: 0rem;
+    p{
+        font-size:$text-size-p;
+        text-align: $alignl;
+    }
+    a{
+        font-size:$text-size-p;
+        font-weight:$text-weight;
+    }
+ }
+}
+}
+} 

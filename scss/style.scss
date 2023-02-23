@@ -1,0 +1,28 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// importar archivos secundarios
+@import "utilidades/mixin";
+@import "utilidades/variables";
+@import"utilidades/extend";
+@import "contenedores/index";
+@import"contenedores/women";
+@import"contenedores/mens";
+@import"contenedores/kids";
+@import"contenedores/unete";
+@import"contenedores/sesion";
+@import"contenedores/terminos";
+@import"contenedores/contactanos";
+@import"contenedores/empleo";
+@import"contenedores/noticias";
+@import"contenedores/mapa";
+@import"contenedores/privacidad";
+@import"contenedores/envio";
+@import"contenedores/compras";
+@import"contenedores/devoluciones";
+@import"contenedores/pago";
+@import"contenedores/pais";
+@import"contenedores/preguntas";

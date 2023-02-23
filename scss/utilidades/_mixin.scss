@@ -1,0 +1,211 @@
+// mixin con parametros
+@mixin header ($background, $position, $top, $z-in){
+    background-color:$background ;
+    position:$position ;
+    top:$top;
+    z-index:$z-in;
+}
+
+
+
+// mixin sin parametros
+
+@mixin logo-eagle{
+  width:25vh;
+  height:14vh;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+@mixin logo-compras{
+    width:10vh;
+    height:10vh;
+    margin: 0rem;
+    padding: 1rem;
+}
+
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@mixin titulos{
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  padding: 2rem;
+  margin: 0rem;
+}
+@mixin parrafo{
+  text-align:$align;
+  font-size:$text-small;
+  color:$color-texto;
+}
+
+@mixin link{
+        text-decoration:$decoration;
+        font-size:$text-small;
+        color:$color-texto;
+}
+@mixin promocion-img{
+    width: 200vh;
+    height: 50vh;
+    padding: 0rem;
+    margin: 0rem;
+    border: 3px solid gray;
+}
+@mixin img-carousel{
+    width: 70vh;
+    height: 70vh;
+}
+@mixin video{
+    width: 96%;
+    height: 50%;
+    padding: 0rem;
+    margin: 0rem;
+    
+}
+@mixin jordan-img{
+    width: 60vh;
+    height: 70vh;
+}
+
+@mixin inicio{
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    margin: 0rem;
+    padding: 0.5rem;
+}
+
+@mixin footer{
+    background-color:black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+@mixin menu-pie-pagina{
+    display:inline-block;
+    padding: 0.5rem;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+@mixin submenu-footer{
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke;
+}
+@mixin iconos-redes{
+    width: 5vh;
+    height: 5vh;
+}
+//mixin por departamento
+@mixin portada-women{
+  width: 90%;
+  height: 30%;
+  padding: 0rem;
+  margin: 0rem;
+  border: 2px solid gray;
+  box-shadow: 12px 12px 20px palevioletred;
+}
+
+@mixin productos{
+    height: 35vh;
+    width: 35vh;
+    padding: 0rem;
+    margin: 2rem;
+    border: 3px solid gray;
+}
+
+@mixin portada-mens{
+    width: 90%;
+    height: 30%;
+    padding: 0rem;
+    margin: 0rem;
+    border: 2px solid gray;
+    box-shadow: 12px 12px 20px blue;
+}
+
+//mixin kids
+@mixin portada-kids{
+  width:60vh;
+  height:40vh;
+  margin: 0rem;
+  padding: 0rem;
+
+}
+
+@mixin grid{
+    height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-rows:2fr 2fr 2fr 2fr;
+  grid-template-areas: 
+      "header header header header"
+      "section main main main"
+      "footer footer footer footer";
+}
+header{
+  grid-area: header;
+ 
+}
+main{
+  grid-area:main ;
+  
+}
+section{
+  
+  grid-area: section;
+  
+}
+footer{
+  grid-area: footer;
+  
+}
+@mixin menu-lateral{
+  font-size: 18px;
+    color: black;
+    text-align: left;
+}
+@mixin encabezados-del-menu{
+  justify-self:center;
+  align-self:start;
+  font-size: 25px;
+  padding: 2rem;
+  margin: 0rem;
+}
+@mixin encabezado-formulario{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 0rem;
+    margin: 0rem;
+}
+@mixin formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:3rem;
+}
+@mixin desktop{
+  @media screen and (max-width: 1200px) {
+      @content;
+  }
+}
+@mixin tablet{
+  @media screen and (max-width: 768px) {
+      @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 576px){
+  @content;
+  }
+       
+}
